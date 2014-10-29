@@ -26,7 +26,10 @@ apiGetFeaturedEvents("events", function(result) {
 
 	} else {
 		//success
-		
+		r = result[0];
+		document.getElementById("venuedsc").innerHTML = r.venue;
+		document.getElementById("eventdate").innerHTML = r.date;
+		document.getElementById("imgevent").innerHTML = r.date;
 	}
 });
 
